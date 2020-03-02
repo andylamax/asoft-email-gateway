@@ -7,6 +7,7 @@ import tz.co.asoft.persist.model.Entity
 class EmailMessage(
         val sender: String,
         val recipients: List<String>,
+        val subject: String?,
         val body: String
 ) : Entity {
     override var uid: String = ""
